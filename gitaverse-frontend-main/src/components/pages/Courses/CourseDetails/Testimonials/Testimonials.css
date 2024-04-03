@@ -1,0 +1,146 @@
+.testimonial-container {
+  padding: 2.5rem;
+  background-color: #f6fdfe;
+}
+
+.testimonial-container h5 {
+  color: #ee6c4d;
+}
+
+.testimonial-container hr {
+  width: 60%;
+}
+
+.testimonial-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.testimonial {
+  text-align: center;
+  padding: 20px;
+}
+
+.carousel-button {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.carousel-button.next {
+  margin-left: 10px;
+}
+
+.carousel-button.prev {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+/* YourComponent.css */
+
+.testimonial-section {
+  border-radius: 50px;
+  border: 0px solid #ccc;
+  padding: 20px;
+  min-width: 60%; /* Adjust as needed */
+  max-width: 80%;
+  margin: 70px auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 0.5px solid rgba(229, 229, 229, 1);
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
+}
+
+.content-container-testimonial {
+  gap: 50px;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+}
+
+.image-container-testimonial img {
+  width: 125px;
+  height: 125px;
+  border-radius: 60px;
+  margin-bottom: 20px;
+}
+
+.image-container-testimonial img {
+  width: 125px;
+  height: 125px;
+  border-radius: 60px;
+  margin-bottom: 20px;
+  margin-right: 0px;
+}
+
+.image-container-testimonial h6 {
+  font-weight: 600;
+  text-align: center;
+}
+
+.text-container-testimonial {
+  text-align: justify;
+  padding: 0 50px;
+}
+
+.section-heading h1 {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1150px) {
+  .content-container-section {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .text-container-section {
+    padding: 0 30px;
+  }
+}
+
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media (max-width: 768px) {
+  .testimonial-carousel {
+    width: 100%;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .carousel-button {
+    margin-top: 10px;
+  }
+
+  .testimonial-container {
+    padding: 0rem;
+  }
+
+  .content-container-testimonial {
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  .text-container-testimonial {
+    padding: 0 30px;
+  }
+
+  .testimonial-section {
+    margin: 5px 0px;
+    padding: 10px 0px;
+  }
+
+  .image-container-testimonial img {
+    width: 75px;
+    height: 75px;
+    border-radius: 60px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    display: flex;
+    margin: auto;
+  }
+  
+  .carousel-button img {
+    transform: rotate(90deg);
+  }
+}

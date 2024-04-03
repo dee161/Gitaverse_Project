@@ -1,0 +1,36 @@
+.module-container {
+  background-color: #f9f7f5;
+  padding: 2.5rem;
+}
+
+.module-container h5 {
+  color: #3d5a80;
+}
+
+.module-head {
+  display: flex;
+  flex-direction: column;
+}
+
+.module-head h3 {
+  font-weight: 600;
+  margin: 3rem 0rem 1.25rem 0rem;
+  text-align: center;
+}
+
+.module-head p {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .module-head p {
+    width: 95%;
+    text-align: justify;
+  }
+
+  .module-container {
+    padding: 1rem;
+  }
+}

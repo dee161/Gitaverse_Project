@@ -1,0 +1,31 @@
+.counselling-img {
+  width: 100%;
+  margin-top: 50px;
+  margin-right: 0px;
+  position: absolute;
+  z-index: -1;
+}
+
+.counselling-heading {
+  text-decoration: none;
+}
+
+.counselling-heading:hover {
+  text-decoration: none;
+  color: grey;
+}
+
+.counselling-heading h1 {
+  padding-top: 15%;
+  font-size: 3rem;
+  font-weight: 900;
+  color: white;
+  margin: 0px 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .counselling-heading h1 {
+    font-size: 2rem;
+    padding-top: 25%;
+  }
+}

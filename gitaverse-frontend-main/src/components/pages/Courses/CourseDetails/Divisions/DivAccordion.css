@@ -1,0 +1,27 @@
+.module-details-container {
+  border: 2px solid rgba(61, 90, 128, 1);
+  margin: 2rem auto;
+  border-radius: 15px;
+  width: 85%;
+}
+
+.div-accordion {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.div-acc {
+  margin: 1.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .module-details-container {
+    margin: 1rem 0rem;
+    width: 100%;
+  }
+
+  .div-accordion {
+    padding: 1rem;
+  }
+}

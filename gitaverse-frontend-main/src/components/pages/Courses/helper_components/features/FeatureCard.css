@@ -1,0 +1,43 @@
+/* Card.css */
+.feature-card {
+  border: none !important;
+  text-align: center;
+  background-color: rgb(224, 251, 252, 0.15) !important;
+  width: 300px;
+  padding: 20px;
+  margin: 35px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.image-container-features {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: visible;
+  background-color: rgb(238, 108, 77, 0.4) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-card-image {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  margin: 0px;
+}
+
+.feature-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+}
+
+.feature-card-description {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: justify;
+}

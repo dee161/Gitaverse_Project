@@ -1,0 +1,43 @@
+/* body{
+  max-width: 100%
+} */
+
+*{
+  box-sizing: border-box;
+}
+
+.garb {
+  height: 50px;
+}
+
+.main-comp {
+  display: block;
+  z-index: 100;
+}
+
+/* .margin-comp {
+  width: 90%;
+  margin: auto;
+} */
+
+.oops {
+  background-color: greenyellow;
+  height: 180vh;
+}
+
+@media screen and (min-width: 1000px) {
+  .main-comp {
+    display: block;
+    /* position: relative; */
+  }
+  
+  .flex-comp {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .oops {
+    background-color: greenyellow;
+    height: 180vh;
+  }
+}

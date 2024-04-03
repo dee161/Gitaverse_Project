@@ -1,0 +1,10 @@
+.counsellor-container h4 {
+  color: #3d5a80;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.counsellor-container {
+  background-color: #f9f7f5;
+}

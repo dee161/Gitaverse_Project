@@ -1,0 +1,101 @@
+/* YourComponent.css */
+
+.rounded-section {
+  border-radius: 50px;
+  border: 0px solid #ccc;
+  padding: 20px;
+  max-width: 80%; /* Adjust as needed */
+  margin: 70px auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content-container-section {
+  gap: 50px;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+}
+
+.image-container-section img {
+  width: 350px;
+  height: 350px;
+  margin: 0px;
+  object-fit: cover;
+
+}
+
+.text-container-section {
+  text-align: justify;
+  padding: 0 100px;
+}
+
+.button-container-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.explore-button {
+  padding: 10px 20px;
+  background-color: rgb(61, 90, 128);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.section-heading h1 {
+  font-weight: 500;
+}
+
+/* .btn-link {
+  text-decoration: none;
+} */
+
+/* .read-more-button {
+  display: flex;
+  justify-content: center;
+}
+
+.read-more-button button {
+  border: none !important;
+  background: white;
+  color: blue;
+} */
+
+@media screen and (max-width: 1150px) {
+  .content-container-section {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .text-container-section {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .content-container-section {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .text-container-section {
+    padding: 0 30px;
+  }
+
+  .image-container-section img {
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+  }
+}

@@ -1,0 +1,99 @@
+/* Style the footer container */
+.footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-footer img {
+  height: 100px;
+  width: 100px;
+}
+
+/* Style the contact section */
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  min-width: 100px;
+}
+
+/* Style the courses section */
+.footer__courses {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__social img {
+  margin-bottom: 0.5rem;
+}
+
+/* Style headings */
+h2 {
+  font-size: 1.2rem;
+  margin-top: 0; /* Remove default margin */
+  font-weight: bolder;
+}
+
+/* Style the list of courses */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Style course list items */
+li {
+  margin-bottom: 5px;
+}
+
+/* Style links */
+a {
+  color: #fff;
+  text-decoration: none;  
+}
+
+/* Style links on hover */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Style links in the course list */
+.footer__courses ul li a {
+  color: #fff;
+}
+
+/* Style links in the course list on hover */
+.footer__courses ul li a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+  }
+
+  .footer__contact {
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .footer__courses {
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .footer__courses ul {
+    padding: 0rem;
+  }
+}

@@ -1,0 +1,112 @@
+.comp1-section, .outcome-section {
+  padding: 2.5rem 2.5rem 2.5rem 3.75rem;
+}
+
+.outcome-section {
+  background-color: #f9f7f5;
+}
+
+.comp1-1 {
+  background-color: #f6fdfe;
+  z-index: -1;
+  height: 60vh;
+  width: 100%;
+  position: absolute;
+}
+
+.section-header {
+  margin-bottom: 25px;
+  color: #3d5a80;
+}
+
+.comp1-section h5 {
+  padding-top: 32px;
+}
+
+.enroll-button {
+  background-color: rgb(61, 90, 128);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  width: 160px;
+  height: 60px;
+  margin-top: 40px;
+  align-items: center;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.enroll-button h3 {
+  margin: 0px;
+}
+
+.comp2-2 {
+  z-index: -100;
+  width: 100%;
+  position: absolute;
+}
+
+.outcome-section h5 {
+  color: #3d5a80;
+}
+
+.outcome-section h3 {
+  margin-top: 35px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.outcome-section h4 {
+  margin-top: 35px;
+}
+
+.detail-outcome h3 {
+  color: rgb(238, 108, 77);
+}
+
+.outcome-points {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.375rem;
+}
+
+.outcome-points img {
+  margin-right: 10px;
+}
+
+.outcome-points p {
+  margin: auto 0rem;
+}
+
+.to-know {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.to-know-container {
+  padding: 0 0.625rem;
+  margin-top: 0.5rem;
+}
+
+.to-know-container p {
+  margin: 0px;
+}
+
+@media screen and (min-width: 1000px) {
+  .fixed-comp {
+    max-width: 60%;
+    flex-basis: 60%;
+  }
+
+  .comp2-2 {
+    height: 90vh;
+    background-color: #f9f7f5;
+  }
+
+  .comp {
+    height: 60vh;
+    background-color: #f6fdfe;
+  }
+}
