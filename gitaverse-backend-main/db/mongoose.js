@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb+srv://TheVedaVerse:TheVedaV4321@cluster0.gwb9v8i.mongodb.net/gvDemo?retryWrites=true&w=majority")
+mongoose.connect("")
 .then(() => {
   console.log('connected mongo successful')
 })
