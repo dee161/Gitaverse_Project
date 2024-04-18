@@ -111,7 +111,7 @@ const Register = ({ onClose }) => {
     } else {
       try {
         const response = await axios.post(
-          "https://gitaverse-backend-hdgacbssp.vercel.app/postRegister",
+          "http://localhost:5000/postRegister",
           formData
         );
         console.log("Data sent to the server:", response.data);
