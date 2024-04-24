@@ -1,8 +1,8 @@
-# GitaverseCourse
+# Gitaverse_Project
 
 ## Introduction
 
-Welcome to the GitaverseCourse repository! This repository contains the backend and frontend code for the Gitaverse project. Gitaverse is a platform that helps users learn Git and GitHub through interactive courses and tutorials.
+Welcome to the GitaverseCourse repository! This repository contains the backend and frontend code for the Gitaverse project. Gitaverse is a platform that helps users learn the values of BhagvadGita through interactive courses and tutorials.
 
 ## Getting Started
 
@@ -42,7 +42,7 @@ Before you begin, make sure you have the following software installed on your ma
 
 ### Usage
 
-Once the backend and frontend servers are running, you can access the Gitaverse application by opening a web browser and navigating to `http://localhost:3000`.
+Once the backend and frontend servers are running, you can access the Gitaverse application by opening a web browser and navigating to `http://localhost:5173` for frontend server and `http://localhost:5000` for backend server.
 
 ## Contributing
 
