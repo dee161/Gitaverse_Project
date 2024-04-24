@@ -4,7 +4,7 @@ import { instData } from "../../Courses/CourseDetails/Instructors/instData";
 const AboutTeam = () => {
   return (
     <div className="about-team-container">
-      <h5>Our Team</h5>
+      <h5>Our Teachers</h5>
       <hr />
       <div className="about-team-content">
         {instData.map((inst) => (
