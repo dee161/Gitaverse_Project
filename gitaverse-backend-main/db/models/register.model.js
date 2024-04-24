@@ -8,6 +8,15 @@ const RegisterSchema = new mongoose.Schema({
     required: true,
     trim: true
   },
+  email: {
+    type: String,
+    trim:true,
+    required:true
+  },
+  age: {
+    type: Number, 
+    required: true    
+  },
   phoneNumber: {
     type: Number,
     required: true,
@@ -15,19 +24,11 @@ const RegisterSchema = new mongoose.Schema({
     min: 1000000000,
     max: 9999999999
   },
-  email: {
-    type: String,
-    trim:true,
-    required:true
-  },
   gender: {
     type: String, 
     required: true    
   },
-  age: {
-    type: Number, 
-    required: true    
-  },
+ 
   pinCode: {
     type: Number,
     required: true,
@@ -46,9 +47,6 @@ const RegisterSchema = new mongoose.Schema({
   countryCode: {
     type: String, 
     // required: true    
-  },
-  province: {
-    type: String,     
   },
   designation: {
     type: String,

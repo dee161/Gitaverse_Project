@@ -7,7 +7,7 @@ import communication from "/Images/Courses/logos/outcomes/communication.svg";
 import Enroll from "./Enroll";
 import { courseData } from "../../../helper_components/course_section/courseData";
 import { useParams } from "react-router-dom";
-
+import UserAuth from "../../../../../utilities/SignIn/UserAuth";
 const FixedBox = ({ title }) => {
   const [isLoginOpen, setIsLoginOpen] = useState(false);
 
@@ -41,6 +41,7 @@ const FixedBox = ({ title }) => {
             <h3>Enroll Now</h3>
           </button>
           <Enroll isOpen={isLoginOpen} onClose={closeLoginPopup} course={title} />
+          <UserAuth isOpen={isLoginOpen} onClose={closeLoginPopup} />
           <p>500 already enrolled</p>
         </section>
       </div>

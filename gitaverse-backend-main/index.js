@@ -50,7 +50,7 @@ app.post("/postRegister", (req, res) => {
   function callback(error, response, body, request) {
     if (!error && response.statusCode == 200) {
       let obj = JSON.parse(body);
-      let city = obj.results[`${pinCode}`][0].city;
+      
       let state = obj.results[`${pinCode}`][0].state;
       let countryCode = obj.results[`${pinCode}`][0].country_code;
 
@@ -61,10 +61,9 @@ app.post("/postRegister", (req, res) => {
         phoneNumber: phoneNumber,
         gender: gender,
         pinCode: pinCode,
-        city: city,
+        city: obj.results[`${pinCode}`][0].province,
         state: state,
         countryCode: countryCode,
-        province: obj.results[`${pinCode}`][0].province,
         designation: designation,
         referralSource: referralSource,
         course: course,
@@ -101,7 +100,7 @@ app.post("/postAppointment", (req, res) => {
   function callback(error, response, body, request) {
     if (!error && response.statusCode == 200) {
       let obj = JSON.parse(body);
-      // let city = obj.results[`${pinCode}`][0].city;
+      
       let state = obj.results[`${pinCode}`][0].state;
       let countryCode = obj.results[`${pinCode}`][0].country_code;
 
@@ -109,10 +108,10 @@ app.post("/postAppointment", (req, res) => {
         name: name,
         phoneNumber: phoneNumber,
         pinCode: pinCode,
-        // city: city,
+        city: obj.results[`${pinCode}`][0].province,
         state: state,
         countryCode: countryCode,
-        province: obj.results[`${pinCode}`][0].province,
+        
       });
       
       newAppointment.save().then((result) => {

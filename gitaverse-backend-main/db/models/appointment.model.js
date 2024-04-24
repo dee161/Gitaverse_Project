@@ -22,10 +22,10 @@ const AppointmentSchema = new mongoose.Schema({
     min: 1,
     max: 999999
   },
-  // city: {
-  //   type: String, 
-  //   // required: true  
-  // },
+  city: {
+    type: String, 
+    // required: true  
+  },
   state: {
     type: String, 
     // required: true    
@@ -33,10 +33,7 @@ const AppointmentSchema = new mongoose.Schema({
   countryCode: {
     type: String, 
     // required: true    
-  },
-  province: {
-    type: String,     
-  },
+  }
 })
 
 const Appointment = mongoose.model('Appointment', AppointmentSchema);

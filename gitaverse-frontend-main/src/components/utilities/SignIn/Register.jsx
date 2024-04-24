@@ -198,8 +198,8 @@ const Register = ({ onClose }) => {
         value={formData.course}
         options={[
           { label: "Course", value: "" },
-          { label: "Understanding God from Science", value: "student" },
-          { label: "Introduction to Bhagavad Gita", value: "profession" },
+          { label: "Understanding God from Science", value: "Understanding God from Science" },
+          { label: "Introduction to Bhagavad Gita", value: "Introduction to Bhagavad Gita" },
         ]}
         onChange={handleChange}
         required
