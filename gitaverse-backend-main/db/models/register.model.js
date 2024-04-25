@@ -63,6 +63,7 @@ const RegisterSchema = new mongoose.Schema({
     // required: true,
     trim: true
   },
+  date: { type: String, default: Date.now },
 })
 
 const Register = mongoose.model('Register', RegisterSchema);

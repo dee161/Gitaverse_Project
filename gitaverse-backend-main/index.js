@@ -1,8 +1,6 @@
 const express = require("express");
 const app = express();
-
 const mongoose = require("./db/mongoose");
-
 const bodyParser = require("body-parser");
 
 const { Register, Appointment } = require("./db/models/server");
@@ -50,7 +48,23 @@ app.post("/postRegister", (req, res) => {
   function callback(error, response, body, request) {
     if (!error && response.statusCode == 200) {
       let obj = JSON.parse(body);
-      
+      let date = new Date();
+      // Function to convert single digit input to two digits
+      const formatData =
+      (input) => {
+          if (input > 9) {
+              return input;
+          } else return `0${input}`;
+      };
+
+      // Data about date
+      let format = {
+          dd: formatData(date.getDate()),
+          mm: formatData(date.getMonth() + 1),
+          yyyy: date.getFullYear(),
+      };
+
+      let dater = format.dd+"/"+format.mm+"/"+format.yyyy;
       let state = obj.results[`${pinCode}`][0].state;
       let countryCode = obj.results[`${pinCode}`][0].country_code;
 
@@ -67,6 +81,7 @@ app.post("/postRegister", (req, res) => {
         designation: designation,
         referralSource: referralSource,
         course: course,
+        date: dater,
       });
       
       newUser.save().then((result) => {
@@ -100,7 +115,23 @@ app.post("/postAppointment", (req, res) => {
   function callback(error, response, body, request) {
     if (!error && response.statusCode == 200) {
       let obj = JSON.parse(body);
-      
+      let date = new Date();
+      // Function to convert single digit input to two digits
+      const formatData =
+      (input) => {
+          if (input > 9) {
+              return input;
+          } else return `0${input}`;
+      };
+
+      // Data about date
+      let format = {
+          dd: formatData(date.getDate()),
+          mm: formatData(date.getMonth() + 1),
+          yyyy: date.getFullYear(),
+      };
+
+      let dater = format.dd+"/"+format.mm+"/"+format.yyyy;
       let state = obj.results[`${pinCode}`][0].state;
       let countryCode = obj.results[`${pinCode}`][0].country_code;
 
@@ -111,7 +142,7 @@ app.post("/postAppointment", (req, res) => {
         city: obj.results[`${pinCode}`][0].province,
         state: state,
         countryCode: countryCode,
-        
+        date:dater ,
       });
       
       newAppointment.save().then((result) => {

@@ -33,7 +33,10 @@ const AppointmentSchema = new mongoose.Schema({
   countryCode: {
     type: String, 
     // required: true    
-  }
+  },
+
+  date: { type: String, default: Date.now},
+  
 })
 
 const Appointment = mongoose.model('Appointment', AppointmentSchema);
