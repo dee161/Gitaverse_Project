@@ -33,7 +33,7 @@ const Appointment = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/postAppointment",
+        "https://gitaverse-project-monish-hsvq.vercel.app/postAppointment",
         formData
       );
       console.log("Data sent to the server:", response.data);
