@@ -15,8 +15,8 @@ const validatePhoneNumber = (phoneNumber) => {
   if (phoneNumber.trim() === '') {
     return 'Phone number is required';
   }
-  if (!/^[0-9]{10}$/.test(phoneNumber)) {
-    return 'Phone number must be 10 digits';
+  if (!/^[6-9][0-9]{9}$/.test(phoneNumber)) {
+    return 'Phone number must be 10 digits and must be valid';
   }
   return '';
 };

@@ -55,7 +55,7 @@ const SignIn = ({ onClose }) => {
             name="phoneNumber"
             value={formData.phoneNumber}
             onChange={handleChange}
-            pattern="[0-9]{10}"
+            pattern="[6-9][0-9]{9}"
             required
           />
         </div>
