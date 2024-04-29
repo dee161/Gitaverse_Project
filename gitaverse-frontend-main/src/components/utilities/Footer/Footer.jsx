@@ -28,16 +28,16 @@ const Footer = () => {
         <h2>Our Courses</h2>
         <ul>
           <li>
-            <Link to="/courses/course1">Understanding God from Science</Link>
+            <Link className="noUnderline" to="/courses/course1">Understanding God from Science</Link>
           </li>
           <li>
-            <Link to="/courses/course2">Introduction to Bhagavad Gita</Link>
+            <Link className="noUnderline" to="/courses/course2">Introduction to Bhagavad Gita</Link>
           </li>
           {/* Add more courses as needed */}
         </ul>
       </div>
       <div className="footer__social">
-        <Link to="https://www.instagram.com/thegitaverse/?igshid=NTc4MTIwNjQ2YQ%3D%3D">
+        <Link to="https://www.instagram.com/gitaverse.in?igsh=Z2ZueG8xZnJ3bG5r">
           <img src={insta} alt="insta" />
         </Link>
         <p>Instagram</p>

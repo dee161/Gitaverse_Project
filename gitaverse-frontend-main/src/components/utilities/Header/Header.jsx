@@ -36,6 +36,7 @@ const Header = () => {
               navData.isActive ? "active-header links" : "links"
             }
             to="/"
+            onClick={toggleMenu}
           >
             Home
           </NavLink>
@@ -44,6 +45,7 @@ const Header = () => {
               navData.isActive ? "active-header links" : "links"
             }
             to="/about"
+            onClick={toggleMenu}
           >
             About Us
           </NavLink>
@@ -52,6 +54,7 @@ const Header = () => {
               navData.isActive ? "active-header links" : "links"
             }
             to="/courses"
+            onClick={toggleMenu}
           >
             Courses
           </NavLink>
@@ -60,6 +63,7 @@ const Header = () => {
               navData.isActive ? "active-header links" : "links"
             }
             to="/counseling"
+            onClick={toggleMenu}
           >
             Counseling
           </NavLink>

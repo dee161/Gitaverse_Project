@@ -55,6 +55,9 @@
   text-decoration: none;
   color: rgb(61, 90, 128);
 }
+.links:hover{
+  text-decoration: none;
+}
 
 .active-header {
   color: rgb(238, 108, 77);

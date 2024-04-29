@@ -19,6 +19,10 @@
   min-width: 100px;
 }
 
+.noUnderline{
+  text-decoration: none;
+}
+
 /* Style the courses section */
 .footer__courses {
   display: flex;
