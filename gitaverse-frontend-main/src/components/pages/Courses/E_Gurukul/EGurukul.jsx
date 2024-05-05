@@ -4,7 +4,7 @@ const EGurukul = () => {
   return (
     <div>
       <div className="h-garb">h</div>
-      <h1>E-Gurukul</h1>
+      <h1>E-Gurukul(Coming Soon)</h1>
     </div>
   )
 }

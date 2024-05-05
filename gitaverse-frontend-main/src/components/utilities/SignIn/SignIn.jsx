@@ -23,7 +23,8 @@ const SignIn = ({ onClose }) => {
 
     try {
       const response = await axios.post(
-        "https://gitaverse-project-monish-hsvq.vercel.app/postRegister",
+        "http://localhost:5000",
+        // "https://gitaverse-project-monish-hsvq.vercel.app/postRegister",
         formData
       );
       console.log("Data sent to the server:", response.data);

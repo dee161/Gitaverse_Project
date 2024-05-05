@@ -33,7 +33,7 @@ const CourseSection = () => {
             </div>
             <div className="text-container-section">
               <div className="section-heading">
-                <h1>E-Gurukul</h1>
+                <h1>E-Gurukul (Coming Soon)</h1>
               </div>
               <p>E Gurukul for Kids is an educational concept inspired by the Bhagavad Gita, aiming to teach children essential life lessons and values from this ancient scripture. It uses interactive and age-appropriate methods, focusing on moral development, yoga, and meditation, while also promoting cultural awareness and parental involvement. This platform fosters holistic growth in children, respecting diverse beliefs.</p>
 

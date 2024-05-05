@@ -24,7 +24,7 @@ const HomeCourse = () => {
         <Link to="/courses/e-gurukul">
           <div className="home-course-card">
             <img src={egurukul} alt="E-Gurukul" />
-            <h3>E-Gurukul</h3>
+            <h3>E-Gurukul (Coming Soon)</h3>
           </div>
         </Link>
       </div>
