@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Appointment.css";
 import logo from "/Images/logo.png";
 import axios from "axios";
-
+import { validateName, validatePhoneNumber,validatePinCode } from "../../../utilities/SignIn/Helpers/RegisterValidation";
 const Appointment = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -11,15 +11,38 @@ const Appointment = () => {
     pinCode: "",
   });
 
-  const [error, setError] = useState({
-    nameError: "",
-    phoneNumberError: "",
+  const [errors, setErrors] = useState({
+    name: "",
+    phoneNumber: "",
     // emailError: "",
-    pinCodeError: "",
+    pinCode: "",
   });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+    let fieldError = "";
+    switch (name) {
+      case "name":
+        fieldError = validateName(value);
+        break;
+      case "phoneNumber":
+        fieldError = validatePhoneNumber(value);
+        break;
+    
+      case "pinCode":
+        fieldError = validatePinCode(value);
+        break;
+      
+      default:
+        break;
+    }
+
+    console.log(errors);
+
+    setErrors({ ...errors, [name]: fieldError });
+
+
+
     setFormData({
       ...formData,
       [name]: value,
@@ -31,17 +54,28 @@ const Appointment = () => {
 
     console.log(formData);
 
+    const hasErrors = Object.values(errors).some((error) => error !== "");
+    if (hasErrors) {
+      alert("Please fix the validation errors before submitting.");
+    } else {
     try {
       const response = await axios.post(
         "https://gitaverse-project-monish-hsvq.vercel.app/postAppointment",
         formData
       );
       console.log("Data sent to the server:", response.data);
+      alert("Appointment Booked Successfully!");
+      setFormData({
+        name: "",
+        phoneNumber: "",
+        pinCode: "",
+        
+      });
     } catch (error) {
       console.error("Error sending data:", error);
     }
-
-    alert("Appointment Booked Successfully!");
+  }
+    
 
     setFormData({
       name: "",
@@ -72,6 +106,7 @@ const Appointment = () => {
               pattern="[A-Za-z ]+"
               required
             />
+            {errors.name != "" && <p className="error-message">{errors.name}</p>}
           </div>
           <div className="phone">
             <label htmlFor="phoneNumber" />
@@ -85,6 +120,9 @@ const Appointment = () => {
               pattern="[0-9]{10}"
               required
             />
+            {errors.phoneNumber != "" && (
+        <p className="error-message">{errors.phoneNumber}</p>
+      )}
           </div>
           {/* <div className="mail">
             <label htmlFor="email" />
@@ -110,6 +148,7 @@ const Appointment = () => {
               pattern="[0-9]{6}"
               required
             />
+            <p className="error-message">{errors.pinCode}</p>
           </div>
           <div className="appointment-button">
             <button type="submit">Book an Appointment</button>
