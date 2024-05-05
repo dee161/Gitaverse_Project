@@ -62,10 +62,10 @@ const Header = () => {
             className={(navData) =>
               navData.isActive ? "active-header links" : "links"
             }
-            to="/counseling"
+            to="/Counselling"
             onClick={toggleMenu}
           >
-            Counseling
+            Counselling
           </NavLink>
         </nav>
         <div>

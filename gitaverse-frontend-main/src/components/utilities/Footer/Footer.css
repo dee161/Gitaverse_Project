@@ -17,10 +17,12 @@
   display: flex;
   flex-direction: column;
   min-width: 100px;
+  align-items: center;
 }
 
 .noUnderline{
   text-decoration: none;
+  
 }
 
 /* Style the courses section */
@@ -28,6 +30,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .footer__social {
@@ -58,7 +61,17 @@ ul {
 li {
   margin-bottom: 5px;
 }
+.footer__courses ul {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.footer__contact p a{
+  text-decoration: none;
+  color: white;
+}
 /* Style links */
 a {
   color: #fff;

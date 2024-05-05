@@ -4,7 +4,7 @@ import Header from './components/utilities/Header'; // Import your Header compon
 import Home from './components/pages/Home'; // Import your Home component
 import AboutUs from './components/pages/AboutUs'; // Import your AboutUs component
 import Courses from './components/pages/Courses'; // Import your Courses component
-import Counseling from './components/pages/Counselling'; // Import your Counseling component
+import Counselling from './components/pages/Counselling'; // Import your Counselling component
 import CourseDetails from './components/pages/Courses/CourseDetails/CourseDetails';
 import Footer from './components/utilities/Footer/Footer';
 import EGurukul from './components/pages/Courses/E_Gurukul/EGurukul';
@@ -22,7 +22,7 @@ const AppRoutes = () => {
         <Route path="/courses/e-gurukul" element={<EGurukul />} />
         <Route path="/courses/:courseId" element={<CourseDetails />} />
         
-        <Route path="/counseling" element={<Counseling />} />
+        <Route path="/Counselling" element={<Counselling />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

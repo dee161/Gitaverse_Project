@@ -17,7 +17,16 @@ const Footer = () => {
         <h2>Contact Us</h2>
         <p>
           <img src={mail} alt="" />
-          gitaverse77@gmail.com
+          <Link
+            to='mailto:gitaverse77@gmail.com'
+            onClick={(e) => {
+                window.location.href = mailto;
+                e.preventDefault();
+            }}
+        >
+            gitaverse77@gmail.com
+        </Link>
+          
         </p>
         <p>
           <img src={phone} alt="" />
