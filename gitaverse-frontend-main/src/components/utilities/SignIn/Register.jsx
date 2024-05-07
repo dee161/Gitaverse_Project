@@ -5,13 +5,13 @@ import InputField from "./Helpers/InputField";
 import SelectField from "./Helpers/SelectField";
 import {
   validateAge,
-  validateConfirmPassword,
+  // validateConfirmPassword,
   validateCourse,
   validateCurrentStatus,
   validateEmail,
   validateGender,
   validateName,
-  validatePassword,
+  // validatePassword,
   validatePhoneNumber,
   validatePinCode,
   validateReferralSource,
@@ -23,8 +23,8 @@ const Register = ({ onClose }) => {
     phoneNumber: "",
     email: "",
     gender: "",
-    password: "",
-    cpassword: "",
+    // password: "",
+    // cpassword: "",
     age: "",
     pinCode: "",
     currentStatus: "",
@@ -36,8 +36,8 @@ const Register = ({ onClose }) => {
     name: "",
     phoneNumber: "",
     email: "",
-    password: "",
-    cpassword: "",
+    // password: "",
+    // cpassword: "",
     gender: "",
     age: "",
     pinCode: "",
@@ -60,12 +60,12 @@ const Register = ({ onClose }) => {
       case "email":
         fieldError = validateEmail(value);
         break;
-      case "password":
-        fieldError = validatePassword(value);
-        break;
-      case "cpassword":
-        fieldError = validateConfirmPassword(value, formData.password);
-        break;
+      // case "password":
+      //   fieldError = validatePassword(value);
+      //   break;
+      // case "cpassword":
+      //   fieldError = validateConfirmPassword(value, formData.password);
+      //   break;
       case "age":
         fieldError = validateAge(value);
         break;
@@ -122,8 +122,8 @@ const Register = ({ onClose }) => {
           name: "",
           phoneNumber: "",
           email: "",
-          password: "",
-          cpassword: "",
+          // password: "",
+          // cpassword: "",
           gender: "",
           age: "",
           pinCode: "",
@@ -163,7 +163,7 @@ const Register = ({ onClose }) => {
         <p className="error-message">{errors.phoneNumber}</p>
       )}
 
-      <InputField
+      {/* <InputField
         label="Password"
         name="password"
         type="password"
@@ -181,7 +181,7 @@ const Register = ({ onClose }) => {
         onChange={handleChange}
         required
       />
-      <p className="error-message">{errors.cpassword}</p>
+      <p className="error-message">{errors.cpassword}</p> */}
 
       <InputField
         label="Email"
